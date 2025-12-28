@@ -1,0 +1,48 @@
+/* style.css */
+/* Dark glassmorphism design */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a2e);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+}
+
+.container {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.toggle-button {
+  width: 150px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button.on {
+  background: rgba(0, 200, 0, 0.3);
+  color: #00ff00;
+}
+
+.toggle-button.off {
+  background: rgba(200, 0, 0, 0.3);
+  color: #ff5555;
+}
+
+.toggle-button:hover {
+  transform: scale(1.05);
+}
